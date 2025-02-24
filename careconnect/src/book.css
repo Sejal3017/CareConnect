@@ -1,0 +1,141 @@
+
+button{
+  border: none;
+  padding: 5px;
+}
+.page{
+    background: var(--blu);
+}
+
+:root{
+  --text-light: black;
+  --bg-light: white;
+  --text-dark: white;
+  --bg-dark:#222020;
+  --bg-blue1: rgb(234, 242, 245);
+  --bg-blue2: rgb(54, 54, 54);
+  --border1:#d5d4d8;
+  --border2:#474748;
+}
+@media(prefers-color-scheme: light){
+  :root {
+    --text: var(--text-light);
+    --bkg: var(--bg-light);
+    --blu: var(--bg-blue1);
+    --border:var(--border1);
+  }
+}
+@media(prefers-color-scheme: dark){
+  :root {
+    --text: var(--text-dark);
+    --bkg: var(--bg-dark);
+    --blu: var(--bg-blue2);
+    --border:var(--border2);
+  }
+}
+[color-scheme="dark"]{
+  --text: var(--text-dark);
+  --bkg: var(--bg-dark);
+  --blu: var(--bg-blue2);
+  --border:var(--border2);
+}
+
+[color-scheme="light"] {
+  --text: var(--text-light);
+  --bkg: var(--bg-light);
+  --blu: var(--bg-blue1);
+  --border:var(--border1);
+}
+nav{
+  background: var(--bkg);
+}
+.logo{
+  width:100px;
+  height:100px;
+  margin-right: 20px;
+}
+
+.search-button{
+  background-color: #4E9BA6;
+  color: var(--text);
+  border-radius: 5px;
+  margin-left:0;
+  width: 35px;
+}
+
+.chat{
+  background-color: #4E9BA6;
+  color:var(--text);
+  border-radius: 5px;
+  margin-left:10px;
+}
+.logout{
+  background-color: #4E9BA6;
+  color: var(--text);
+  border-radius: 5px;
+  margin-left:10px;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contain{
+    width:70%;
+    display: flex;
+    padding:10px;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: var(--bkg);
+    border-style: solid;
+    border-color: var(--border);
+  color: var(--text);
+}
+.time{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    align-items: center;
+}
+.time p{
+    margin-right: 20px;
+  font-size: large;
+}
+.reason textarea{
+    width: 300px;
+}
+
+.timesubmit{
+    color:var(--text);
+    background-color: #4E9BA6;
+    height: 50px;
+    font-size:larger;
+    border-radius: 10px;
+    width: 150px;
+    align-self: center;
+    margin-top: 10px;
+}
+.heading h2{
+    padding-left: 40%;
+}
+.heading{
+    height:50px;
+    margin-top: 20px;
+    width:60%;
+    padding: 5px;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    color:#4E9BA6;
+    background-color: var(--bkg);
+}
+.logo{
+  height: 100px;
+  width: 100px;
+  margin-right: 20px;
+}
+#calendar{
+  width:auto;
+  min-height: 300px;
+}

@@ -1,0 +1,263 @@
+{% comment %} <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <style>
+      .container {
+        margin-top: 50px;
+      }
+    </style>
+
+    <title>CareConnect | Your health partner</title>
+  </head>
+  <!-- Simple HTML page with inbuilt CSS and JavaScript for product description page -->
+  <body>
+    <div class="container">
+      <!-- Top Bar with Login and Register at right end-->
+      <div class="row">
+        <div class="col-md-6">
+          {% load static %} <img src={% static 'logo.png' %} alt="PNIM Logo"
+          width="125" height="100" />
+        </div>
+        <div class="col-md-6">
+          <div class="float-right">
+            <a href="/login" class="btn btn-outline-primary">Login</a>
+            <a href="/signup" class="btn btn-outline-primary">Register</a>
+          </div>
+        </div>
+      </div>
+      <br />
+      <!-- Welcome Banner for Product -->
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Welcome to CareConnect!</h1>
+        </div>
+      </div>
+      <br />
+
+      <!-- Product Description -->
+      <div class="row">
+        <div class="col-md-12">
+          <h4>For all your health needs!</h4>
+          <p>
+            CareConnect is a web application that allows patients to connect
+            with doctors, search for appointments, and book appointments. It
+            also allows doctors to manage their appointments and patients. It is
+            a one-stop solution for all your health needs. It also allows you to
+            search for insurance providers and select insurance plans.
+          </p>
+        </div>
+      </div>
+
+      <!-- Features Menu with 3 columns data and images -->
+      <div class="row">
+        <div class="col-md-4">
+          <h4>Patients</h4>
+          <ul>
+            <li>Search for Doctors</li>
+            <li>Book Appointments</li>
+            <li>Search for Insurance Providers</li>
+            <li>Select Insurance Providers</li>
+            <li>Leave Reviews for Doctors and Insurance Providers</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h4>Doctors</h4>
+          <ul>
+            <li>Advertise appointments</li>
+            <li>Get patient bookings</li>
+            <li>Patient Information beforehand (when shared)</li>
+            <li>Chat with other doctors</li>
+            <li>Sync with Insurance Providers</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h4>Insurance Providers</h4>
+          <ul>
+            <li>Advertise new plans</li>
+            <li>Conduct marketing</li>
+            <li>Get patient details for current plans</li>
+            <li>Sync with doctors</li>
+            <li>Get reviews for packages</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Footer with social follow links -->
+      <!-- <div class="col-md-12" style="background-color: aqua">
+        <p>Hello World!</p>
+      </div> -->
+    </div>
+  </body>
+</html> {% endcomment %}
+
+
+
+
+<html>
+<head>
+    <style>
+        .nav {
+            overflow: hidden;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .nav-logo {
+            width:130px;
+            position: absolute;
+            top: 0;
+            left:0;
+        }
+        
+        .nav-items {
+            font-family: Betm Rounded;
+            font-size:25px;
+            color: #4e9ba6;
+            float: right;
+            list-style: none;
+            display: flex;
+        }
+        
+        .nav-items > li {
+            padding: 20px;
+            float: left;
+        }
+        .btn-primary{
+            background-color:white;
+            color:#4e9ba6;
+            border:none;
+            
+            
+            
+        }
+        .btn-primary:hover{
+            
+            background-color: #4e9ba6;
+            color: white;
+            border-radius: 20px;
+            
+            
+        }
+        
+        .nav-items-2 {
+            font-family: Betm Rounded;
+            font-size:25px;
+            float: right;
+            list-style: none;
+            display: flex;
+        }
+        
+        .nav-items-2 > li {
+            padding: 20px;
+            float: left;
+        }
+        
+        .nav-items-2>li:first-child {
+            margin-left: 0;
+          }
+        
+        .nav-items-2 > li:hover {
+          position: relative;
+        }
+        .nav-items-2 > li::before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: transparent;
+            transition: all 0.3s ease;
+          }
+          
+        .nav-items-2> li:hover::before {
+            background-color: #d699ad;
+        }
+        
+        .box-main{
+            position: absolute;
+            width: 518px;
+            height: 107px;
+            left: 47px;
+            top: 179px;
+        
+            font-family: 'Betm Rounded';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 50px;
+            line-height: 55px;
+        
+            color: #000000;
+        
+        }
+        .box-main2{
+            position: absolute;
+            width: 391px;
+            height: 60px;
+            left: 54px;
+            top: 296px;
+        
+            font-family: 'Betm Rounded';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 25px;
+            line-height: 28px;
+        
+            color: #000000; 
+        
+        }
+        .imgarea{
+            position: absolute;
+            justify-content: center;
+            left:800px;
+            width: 561px;
+            height: 558px;
+            
+          }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <nav class="nav">
+        {% load static %}<img src={% static 'react-logo.png' %} class="nav-logo" />
+        <ul class="nav-items">
+            <li><button class="btn btn-primary" ><a href="/signup">Sign Up</a></button></li>
+            <li><button class="btn btn-primary"> <a href="/login">Log In </a></button></li>
+            </ul>
+        <ul class="nav-items-2">
+        <li>Home</li>
+        <li>About US</li>
+        <li>Services</li>
+        </ul>
+    </nav>
+    </header>
+
+    <div>
+        <div class="box-main">
+            One Stop Solution for All Your Medical Needs
+        </div>
+        <div class="box-main2">
+            Facilitates access to top-quality, affordable healthcare options
+        </div>
+        {% load static %}<img src={% static 'img1.png' %}  class="imgarea"></img>      
+    </div>
+
+</body>
+</html>

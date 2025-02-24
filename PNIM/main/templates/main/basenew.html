@@ -1,0 +1,155 @@
+<html>
+<head>
+    <style>
+        .nav {
+            overflow: hidden;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .nav-logo {
+            width:130px;
+            position: absolute;
+            top: 0;
+            left:0;
+        }
+        
+        .nav-items {
+            font-family: Betm Rounded;
+            font-size:25px;
+            color: #4e9ba6;
+            float: right;
+            list-style: none;
+            display: flex;
+        }
+        
+        .nav-items > li {
+            padding: 20px;
+            float: left;
+        }
+        .btn-primary{
+            background-color:white;
+            color:#4e9ba6;
+            border:none;
+            
+            
+            
+        }
+        .btn-primary:hover{
+            
+            background-color: #4e9ba6;
+            color: white;
+            border-radius: 20px;
+            
+            
+        }
+        
+        .nav-items-2 {
+            font-family: Betm Rounded;
+            font-size:25px;
+            float: right;
+            list-style: none;
+            display: flex;
+        }
+        
+        .nav-items-2 > li {
+            padding: 20px;
+            float: left;
+        }
+        
+        .nav-items-2>li:first-child {
+            margin-left: 0;
+          }
+        
+        .nav-items-2 > li:hover {
+          position: relative;
+        }
+        .nav-items-2 > li::before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: transparent;
+            transition: all 0.3s ease;
+          }
+          
+        .nav-items-2> li:hover::before {
+            background-color: #d699ad;
+        }
+        
+        .box-main{
+            position: absolute;
+            width: 518px;
+            height: 107px;
+            left: 47px;
+            top: 179px;
+        
+            font-family: 'Betm Rounded';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 50px;
+            line-height: 55px;
+        
+            color: #000000;
+        
+        }
+        .box-main2{
+            position: absolute;
+            width: 391px;
+            height: 60px;
+            left: 54px;
+            top: 296px;
+        
+            font-family: 'Betm Rounded';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 25px;
+            line-height: 28px;
+        
+            color: #000000; 
+        
+        }
+        .imgarea{
+            position: absolute;
+            justify-content: center;
+            left:800px;
+            width: 561px;
+            height: 558px;
+            
+          }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <nav class="nav">
+        {% load static %}<img src={% static 'react-logo.png' %} class="nav-logo" />
+        <ul class="nav-items">
+            <li><button class="btn btn-primary" ><a href="/signup">Sign Up</a></button></li>
+            <li><button class="btn btn-primary"> <a href="/login">Log In </a></button></li>
+            </ul>
+        <ul class="nav-items-2">
+        <li>Home</li>
+        <li>About US</li>
+        <li>Services</li>
+        </ul>
+    </nav>
+    </header>
+
+    <div>
+        <div class="box-main">
+            One Stop Solution for All Your Medical Needs
+        </div>
+        <div class="box-main2">
+            Facilitates access to top-quality, affordable healthcare options
+        </div>
+        {% load static %}<img src={% static 'img1.png' %}  class="imgarea"></img>      
+    </div>
+
+</body>
+</html>

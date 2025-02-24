@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Betm Rounded;
+    box-sizing: border-box;
+}
+
+.nav-logo {
+    width:130px;
+    position: absolute;
+    top: 0;
+    left:0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+.outer-card {
+    background: radial-gradient(#d8dfdf, #4e9ba6);
+    background-repeat: no-repeat;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8rem 0 10rem 0;
+}
+.card {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    /* background-color: rgba(0, 0, 0, 0.75); */
+    background-color: white;
+    max-width: 500px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem;
+    box-shadow: 0 0px 20px rgba(0,0,0,0.25), 0 6px 6px rgba(0,0,0,0.25);
+}
+.lock-icon {
+    font-size: 3rem;
+}
+h2 {
+    font-size: 2.5rem;
+    margin-top: 10px;
+    padding-bottom: 1.0rem;
+    color: rgb(88, 88, 88);
+}
+p {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    color: rgb(88, 88, 88);
+}
+.passInput {
+    /* text-align: center; */
+    /* margin-top: 10px; */
+    margin-bottom: 30px;
+    width: 85%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #4e9ba6;
+    font-size: 18px;
+    color: rgba(85, 85, 85);
+    outline: none;
+}
+button {
+    margin-top: 18px;
+    background-color: #4e9ba6;
+    color: white;
+    border-color: white;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 76px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submit {
+    margin-top: 0.5em;
+    text-transform: uppercase;
+}
+
+.passwd {
+    color: rgb(88, 88, 88);
+    padding-top: 1.0em;
+}
+button:hover { 
+    background-color: #68b1bd;
+    /* transform: scale(1.1);  */
+}
+.logo{
+    max-width: 25%;
+}
+/*can drop these two and uncomment line 106 to put cursor in center of card*/
+input {
+    width: 100%
+}
+input::placeholder {
+    text-align: center;
+}
+
+footer {
+    background-color: white;
+    margin: 15px;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  p {
+    margin: 0;
+  }
+  
+  .social-icons {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .social-icons li {
+    margin: 0 10px;
+  }
+  
+  .social-icons a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #444;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    transition: all 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    /* background-color: #333; */
+    background-color: #68b1bd;
+  }
+
+  @media (max-width: 775px) {
+
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 18px;
+        padding-bottom: 20px;
+    }
+
+    .submit {
+        margin-top: 2px;
+        background-color: #4e9ba6;
+        color: white;
+        border-color: white;
+        outline: none;
+        border: none;
+        border-radius: 25px;
+        padding: 10px 40px;
+        font-size: 16px;
+        text-transform: uppercase;
+        /* transition: all .2s ease-in-out;  */
+        cursor: pointer;
+    }
+
+    .social-icons li:hover {
+        background-color: white;
+    }
+    
+  }
